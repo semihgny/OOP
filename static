@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //Insan d = new Insan("Güney");
+
+
+            Insan.isim = "Semih";
+            Insan.soyad = "Güney";
+
+            Console.WriteLine(Insan.isim + " " + Insan.soyad);
+
+            Console.ReadLine();
+            
+        }
+    }
+
+    public class Insan
+    {
+        public static string isim;
+        public static string soyad;
+
+        public Insan(string isim)
+        {
+
+            //this.soyad = "Semih";
+            //this.isim = isim;
+
+            Console.WriteLine(soyad + " " + isim);
+
+        }
+
+
+    }
+}
